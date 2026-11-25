@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "homologacao" ]
+    branches: [ "producao" ]
   pull_request:
-    branches: [ "homologacao" ]
+    branches: [ "producao" ]
 
 permissions:
   contents: read
@@ -49,7 +49,7 @@ jobs:
         uses: docker/build-push-action@v7.4.0
         with:
           push: true
-          tags: kamilabinga/api_homologacao
+          tags: kamilabinga/api_producao
 
       
 
