@@ -69,7 +69,7 @@ jobs:
                 sudo docker rm api_homologacao 2>/dev/null || true
               
                 #instalar nova versão 
-                sudo docker run --name api_homologacao -d -p 80:80 kamilabinga/api_homologacao:latest
+                sudo docker run --name api_homologacao -d -p 80:8080 kamilabinga/api_homologacao:latest
     
           
 
