@@ -58,12 +58,12 @@ jobs:
         - name: Deploy na EC2
           uses: appleboy/ssh-action@v1.0.3
           with:
-            host: 3.213.198.158
+            host: 54.86.25.59
             username: ubuntu
             key: ${{secrets.CHAVE}}
             script: |
                 echo "Acesso Liberado"
-                sudo docker pull kamilabinga/api_producao
+                sudo docker pull kamilabinga/api_producao:latest
                 sudo docker stop api_producao 2>/dev/null || true
                 sudo docker rm api_producao 2>/dev/null || true
               
