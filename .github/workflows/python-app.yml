@@ -51,7 +51,7 @@ jobs:
           push: true
           tags: kamilabinga/api_producao
   deploy:
-      needs: build
+      needs: Imagem
       runs-on: ubuntu-latest
       
       steps:
