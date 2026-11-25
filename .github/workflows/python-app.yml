@@ -52,7 +52,7 @@ jobs:
           tags: kamilabinga/api_homologacao
 
   deploy:
-      needs: build
+      needs: Imagem
       runs-on: ubuntu-latest
       
       steps:
